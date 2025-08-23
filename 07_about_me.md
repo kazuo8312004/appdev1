@@ -9,5 +9,3 @@
 ## Why I Want to Learn Git & GitHub
 
 I want to learn Git and GitHub Because they are need to my academic so I need to learn it so I can pass and get a good grade in this class.
-
-
