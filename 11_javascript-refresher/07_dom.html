@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+</head>
+<body>
+  <button onclick="changeColor()">Change Background</button>
+  <p id="message"></p>
+
+  <script>
+    function changeColor() {
+      document.body.style.backgroundColor = prompt("Enter your favorite color:");
+    }
+
+    setTimeout(() => {
+      document.getElementById("message").innerText = "This message appears after 2 seconds";
+    }, 2000);
+  </script>
+</body>
+</>
