@@ -19,7 +19,27 @@ function MyApp() {
   );
 }
 
+function Greeting() {
+  return (
+    <h1>Hello, Admin!</h1>
+  );
+}
 
+function Greeting2() {
+  return (
+    <h1>Admin not found</h1>
+  );
+}
+
+function CheckAdmin() {
+  const isLoggedIn = false;
+  if (isLoggedIn) {
+    return <Greeting />;
+  }
+  else {
+    return <Greeting2 />;
+  }
+}
 
 function App() {
 
@@ -27,6 +47,7 @@ function App() {
     <div>
       <MyApp />
       <MyButton />
+      <CheckAdmin />
     </div>
   )
 }
