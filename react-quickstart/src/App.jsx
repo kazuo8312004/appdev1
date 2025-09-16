@@ -7,11 +7,18 @@ function MyButton() {
   );
 }
 
+const user = { 
+  name: 'Percy',              
+  age: 18,
+  course: 'BSIS-3A'
+  };
+
 function MyApp() {
   return (
-    <h1 className='message'>Welcome to my app</h1>
+    <h1 className='message'>Welcome to my {user.name} app</h1>
   );
 }
+
 
 
 function App() {
@@ -19,6 +26,7 @@ function App() {
   return (
     <div>
       <MyApp />
+      <MyButton />
     </div>
   )
 }
