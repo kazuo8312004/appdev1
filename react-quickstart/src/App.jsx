@@ -9,7 +9,7 @@ function MyButton() {
 
 function MyApp() {
   return (
-    <h1>Welcome to my app</h1>
+    <h1 className='message'>Welcome to my app</h1>
   );
 }
 
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div>
-      
+      <MyApp />
     </div>
   )
 }
