@@ -1,5 +1,5 @@
-let foods = ["sushi", "ramen", "tacos"];
-foods.push("pizza");
+let foods = ["Sushi", "Pizza", "Tacos"];
+foods.push("Ramen");
 foods.shift();
 
 for (const food of foods) {
