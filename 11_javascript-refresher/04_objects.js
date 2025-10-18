@@ -1,10 +1,10 @@
 let aboutMe = {
   name: "Percival",
   age: 21,
-  course: "BSIS",
+  course: "BSIS3-A",
   introduce() {
     console.log(`Hi, my name is ${this.name} and I am ${this.age} years old.`);
   }
 };
 
-aboutMe.hobby = "coding";
+aboutMe.hobby = "Chess";
