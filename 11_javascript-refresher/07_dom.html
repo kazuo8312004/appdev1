@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Color Changer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DOM Activity</title>
 </head>
 <body>
-  <button onclick="changeColor()">Change Background</button>
-  <p id="message"></p>
+  <button onclick="changeBackground()">Change Background</button>
+  <p id="colorDisplay"></p>
+  <p id="delayedMessage"></p>
 
   <script>
-    function changeColor() {
-      document.body.style.backgroundColor = prompt("Enter your favorite color:");
+    function changeBackground() {
+      const color = prompt("What's your favorite color?");
+      document.body.style.backgroundColor = color;
+      document.getElementById("colorDisplay").textContent = `Your favorite color is ${color}`;
+      setTimeout(() => {
+        document.getElementById("delayedMessage").textContent = "This message appears after 2 seconds";
+      }, 2000);
     }
-
-    setTimeout(() => {
-      document.getElementById("message").innerText = "This message appears after 2 seconds";
-    }, 2000);
   </script>
 </body>
-</>
+</html>
