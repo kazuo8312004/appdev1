@@ -2,8 +2,12 @@
 import './App.css';
 
 function MyButton() {
+  function handleClick() {
+    alert("Button clicked!");
+  }
+
   return (
-    <button>I'm a button</button>
+    <button onClick={handleClick}>I'm a button</button>
   );
 }
 
