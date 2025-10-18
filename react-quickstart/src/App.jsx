@@ -1,5 +1,6 @@
 // App.jsx
 import './App.css';
+import { useState } from 'react';
 
 function MyButton() {
   function handleClick() {
@@ -55,6 +56,17 @@ function SubjectList() {
   );
 }
 
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
+  );
+}
+
 function App() {
   return (
     <div>
@@ -62,6 +74,7 @@ function App() {
       <MyButton />
       <CheckAdmin />
       <SubjectList />
+      <Counter />
     </div>
   );
 }
