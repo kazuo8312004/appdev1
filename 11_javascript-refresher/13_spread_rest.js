@@ -2,7 +2,7 @@ const numbers = [1, 2, 3];
 const moreNumbers = [...numbers, 4, 5];
 
 const user = { name: "Percival", age: 21 };
-const updatedUser = { ...user, course: "ReactJS" };
+const updatedUser = { ...user, course: "BSIS3-A" };
 
 function sum(...args) {
   return args.reduce((acc, val) => acc + val, 0);
