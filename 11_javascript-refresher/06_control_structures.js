@@ -1,10 +1,10 @@
-let score = 85;
+let grade = 85;
 
-if (score >= 90) {
+if (grade >= 90) {
   console.log("A");
-} else if (score >= 80) {
+} else if (grade >= 80) {
   console.log("B");
-} else if (score >= 70) {
+} else if (grade >= 70) {
   console.log("C");
 } else {
   console.log("F");
