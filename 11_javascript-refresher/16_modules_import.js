@@ -1,8 +1,6 @@
-export default function greet() {
-  return "Hello from module!";
-}
+// 16_modules_import.js
+import greet from './15_modules_export.js';
+import { userInfo } from './15_modules_export.js';
 
-export const info = {
-  name: "Percival",
-  age: 25
-};
+console.log(greet());
+console.log(`Name: ${userInfo.name}, Age: ${userInfo.age}`);
