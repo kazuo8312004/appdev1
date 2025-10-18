@@ -1,7 +1,10 @@
-let name = "Percival";
-const age = 21;
+let myName = "Percival";
+const myAge = 21;
 
-name = "kirk"; 
+myName = "Percy"; 
 
-var oldName = "kirk";
-oldName = "Percival";
+var name = "Percival";
+var age = 21;
+age = 18;
+
+console.log(myName, myAge, name, age);
