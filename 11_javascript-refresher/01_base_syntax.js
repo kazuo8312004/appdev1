@@ -1,7 +1,6 @@
 console.log("Hello JavaScript");
-
 let myName = "Percival";
-let myname = "kirk";
+let myname = "Not Percival";
 
 console.log(myName); 
-console.log(myname);
+console.log(myname); 
