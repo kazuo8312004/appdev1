@@ -13,3 +13,7 @@ class Student extends Person {
     console.log(`${this.name} is studying`);
   }
 }
+
+const student = new Student("Percival");
+student.sayHello();
+student.study();
