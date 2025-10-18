@@ -1,5 +1,5 @@
-
-import './App.css'
+// App.jsx
+import './App.css';
 
 function MyButton() {
   return (
@@ -7,11 +7,11 @@ function MyButton() {
   );
 }
 
-const user = { 
-  name: 'Percy',              
+const user = {
+  name: 'Percy',
   age: 18,
   course: 'BSIS-3A'
-  };
+};
 
 function MyApp() {
   return (
@@ -35,21 +35,31 @@ function CheckAdmin() {
   const isLoggedIn = false;
   if (isLoggedIn) {
     return <Greeting />;
-  }
-  else {
+  } else {
     return <Greeting2 />;
   }
 }
 
-function App() {
+function SubjectList() {
+  const subjects = ['Math', 'Science', 'Programming'];
+  return (
+    <ul>
+      {subjects.map((subject, index) => (
+        <li key={index}>{subject}</li>
+      ))}
+    </ul>
+  );
+}
 
+function App() {
   return (
     <div>
       <MyApp />
       <MyButton />
       <CheckAdmin />
+      <SubjectList />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
