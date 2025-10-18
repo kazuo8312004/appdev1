@@ -1,6 +1,11 @@
-// App.jsx
 import './App.css';
 import { useState } from 'react';
+
+const user = {
+  name: 'Percy',
+  age: 18,
+  course: 'BSIS-3A'
+};
 
 function MyButton() {
   function handleClick() {
@@ -12,13 +17,7 @@ function MyButton() {
   );
 }
 
-const user = {
-  name: 'Percy',
-  age: 18,
-  course: 'BSIS-3A'
-};
-
-function MyApp() {
+function MyApp({ user }) {
   return (
     <h1 className='message'>Welcome to my {user.name} app</h1>
   );
@@ -70,7 +69,7 @@ function Counter() {
 function App() {
   return (
     <div>
-      <MyApp />
+      <MyApp user={user} />
       <MyButton />
       <CheckAdmin />
       <SubjectList />
