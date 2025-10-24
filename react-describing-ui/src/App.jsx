@@ -1,5 +1,5 @@
-import PeopleList from "./component/PeopleList";
+import TeaSet from "./component/TeaSet";
 
 export default function App() {
-  return <PeopleList />;
+  return <TeaSet />;
 }
