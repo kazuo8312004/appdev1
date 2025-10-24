@@ -1,12 +1,13 @@
+const student = {
+  name: "Kirk Percival B. Del Pilar",
+  course: "BSIS 3-A"
+};
+
 export default function App() {
   return (
-    <>
-      <h1>Todo List</h1>
-      <ul>
-        <li>Study React</li>
-        <li>Make Activity</li>
-        <li>Push to GitHub</li>
-      </ul>
-    </>
+    <div style={{ backgroundColor: "black", color: "pink", padding: "10px" }}>
+      <h1>{student.name}'s Activity</h1>
+      <p>Course: {student.course}</p>
+    </div>
   );
 }
