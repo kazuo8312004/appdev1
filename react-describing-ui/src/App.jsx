@@ -1,10 +1,5 @@
-import Avatar from "./component/Avatar";
+import PackingList from "./component/PackingList";
 
 export default function App() {
-  return (
-    <div>
-      <Avatar name="Lei Ann" />
-      <Avatar name="Kirk Percival" />
-    </div>
-  );
+  return <PackingList />;
 }
