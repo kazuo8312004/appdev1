@@ -4,10 +4,9 @@ export default function Gallery() {
   return (
     <section>
       <h1>Amazing scientists</h1>
-      {/* Using Profile component multiple times */}
-      <Profile />
-      <Profile />
-      <Profile />
+      <Profile src="https://i.imgur.com/MK3eW3As.jpg" alt="Katherine Johnson" />
+      <Profile src="https://i.imgur.com/QIrZWGIs.jpg" alt="Alan L. Hart" />
+      <Profile src="https://i.imgur.com/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />
     </section>
   );
 }
