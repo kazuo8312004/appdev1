@@ -6,12 +6,13 @@ function App() {
   const name = 'Gregorio Y. Zara';  
   return (
     <>
+    <h1>{name}'s to do List</h1>
       <img
       className="avatar" 
       src={avatar}
       alt={description}
       />
-      <h1>{name}'s to do List</h1>
+    
 
       <ul style={{
         backgroundColor: 'black',
