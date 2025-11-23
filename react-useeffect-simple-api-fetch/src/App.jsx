@@ -12,4 +12,8 @@ function App() {
   )
 }
 
+// sorry po na late ako ng submit nagkaroon po kasi ng problema sa 
+// family kaya po medyo na late napo ako ng submit I'll be more careful next time po
+// sorry po talaga
+
 export default App
